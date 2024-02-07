@@ -1,7 +1,8 @@
-class main:
-    def __init__(self):
-        print("there")
-        sck = Socket.Create()
-        sckdata = Socket.accept(sck)
+def main():
+    print("there")
+    sck = Socket.Create()
+    sckdata = Socket.accept(sck)
 
-main()
+if __name__ == "__main__":
+    # This block will only be executed if the script is run directly
+    main()
