@@ -1,6 +1,9 @@
 import socket
 import threading
 
+program = Program()
+program.socket_recv()
+
 class Program:
     def __init__(self):
         print("Constructor created")
