@@ -1,8 +1,7 @@
 import socket
 import threading
+from encodings.utf_8 import encode
 
-program = Program()
-program.socket_recv()
 
 class Program:
     def __init__(self):
@@ -21,4 +20,3 @@ class Program:
     def socket_recv(self, s: socket.socket):
         while True:
             data = s.recv(1000).decode("utf-8")
-
